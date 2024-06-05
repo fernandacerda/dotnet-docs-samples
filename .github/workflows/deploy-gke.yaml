@@ -79,7 +79,7 @@ jobs:
       run: docker build --tag "${{ env.IMAGE_TAG }}" applications/clouddemo/net4
 
     - name: Publish Docker image to Google Artifact Registry
-      run: docker push "${{ env.IMAGE_TAG }"
+      run: docker push "${{ env.IMAGE_TAG }}"
 
     #
     # Deploy to GKE
